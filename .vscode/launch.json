@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C#: Pomo Debug (WindowsDX)",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/Pomo.WindowsDX/Pomo.WindowsDX.csproj"
+        },
+        {
+            "name": "C#: Pomo Debug (DesktopGL)",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/Pomo.DesktopGL/Pomo.DesktopGL.csproj"
+        },
+        {
+            "name": "C#: Pomo Debug (Android)",
+            "type": "maui",
+            "request": "launch",
+            "preLaunchTask": "maui: Build",
+            "cwd": "${workspaceFolder}/Pomo.Android",
+        },
+        {
+            "name": "C#: Pomo Debug (iOS)",
+            "type": "maui",
+            "request": "launch",
+            "preLaunchTask": "maui: Build",
+            "cwd": "${workspaceFolder}/Pomo.iOS",
+        },
+    ]
+}
