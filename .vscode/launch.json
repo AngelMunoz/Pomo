@@ -5,16 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C#: Pomo Debug (WindowsDX)",
-            "type": "dotnet",
+            "name": "F#: Pomo Debug (WindowsDX)",
+            "type": "coreclr",
             "request": "launch",
-            "projectPath": "${workspaceFolder}/Pomo.WindowsDX/Pomo.WindowsDX.csproj"
+            "preLaunchTask": "Build: Pomo.WindowsDX.fsproj",
+            "program": "${workspaceFolder}/Pomo.WindowsDX/bin/Debug/net8.0-windows/Pomo.dll",
         },
         {
-            "name": "C#: Pomo Debug (DesktopGL)",
-            "type": "dotnet",
+            "name": "F#: Pomo Debug (DesktopGL)",
+            "type": "coreclr",
             "request": "launch",
-            "projectPath": "${workspaceFolder}/Pomo.DesktopGL/Pomo.DesktopGL.csproj"
+            "preLaunchTask": "Build: Pomo.DesktopGL.fsproj",
+            "program": "${workspaceFolder}/Pomo.DesktopGL/bin/Debug/net8.0/Pomo.dll",
         },
         {
             "name": "C#: Pomo Debug (Android)",

@@ -4,7 +4,7 @@
     <TargetFramework>net8.0-android</TargetFramework>
     <SupportedOSPlatformVersion>29</SupportedOSPlatformVersion>
     <ApplicationId>com.companyname.Pomo</ApplicationId>
-    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationVersion>1.0</ApplicationVersion>
     <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
     <AssemblyName>Pomo</AssemblyName>
   </PropertyGroup>
@@ -12,6 +12,9 @@
     <MonoGameContentReference Include="..\Pomo.Core\Content\Pomo.mgcb">
       <Link>Content\Pomo.mgcb</Link>
     </MonoGameContentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Pomo.Core\Pomo.Core.fsproj" />
